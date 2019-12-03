@@ -23,7 +23,6 @@ export class AppComponent implements OnInit  {
         result => {
         this.resultData.push(result);
         this.resultData = this.resultData[0];
-        console.log(this.resultData);
     });
   }
 }

@@ -19,9 +19,7 @@
             <div id="accordion" class="accordion">
                 <div class="card" *ngFor="let item of resultData.data | filter : searchText">
                     <div class="card-header collapsed">
-                        <a class="card-link" data-toggle="collapse" href="#collapse">
-                          {{item.email}}
-                        <i class="fa fa-arrow-circle-down"></i></a>
+                        <button type="button" class="btn btn-link btn-block" data-toggle="collapse" data-target="#collapse">{{item.email}} <i class="fa fa-arrow-circle-down"></i></button>
                     </div>
                     <div id="collapse" class="collapse show" data-parent="#accordion">
                         <div class="card-body">
